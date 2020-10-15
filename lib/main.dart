@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  runApp(
+    MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: SafeArea(
-          child: Container(
-            child: Text("main"),
-          ),
+        backgroundColor: Colors.redAccent,
+        appBar: AppBar(
+          title: Text("Dice"),
+          backgroundColor: Colors.redAccent,
         ),
+        body: DicePage(),
       ),
-    );
+    ),
+  );
+}
+
+class DicePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
