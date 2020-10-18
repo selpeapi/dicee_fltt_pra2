@@ -15,18 +15,17 @@ void main() {
     ),
   );
 }
+
 class DicePage extends StatefulWidget {
   @override
   _DicePageState createState() => _DicePageState();
 }
 
 class _DicePageState extends State<DicePage> {
-  var leftDiceNumber = 0;
+  var leftDiceNumber = 1;
 
   @override
   Widget build(BuildContext context) {
-    leftDiceNumber = 2;
-
     return Center(
       child: Row(
         children: [
@@ -35,6 +34,11 @@ class _DicePageState extends State<DicePage> {
               padding: const EdgeInsets.all(16.0),
               child: FlatButton(
                 onPressed: () {
+                  setState(() {
+                    //상태 업데이트에 사용
+                    leftDiceNumber = 3;
+                    print("$leftDiceNumber");
+                  });
                   print("asdf");
                 },
                 padding: EdgeInsets.all(0),
