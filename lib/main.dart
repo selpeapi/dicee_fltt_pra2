@@ -18,6 +18,7 @@ void main() {
 
 class DicePage extends StatelessWidget {
   var leftDiceNumber = 0;
+
   @override
   Widget build(BuildContext context) {
     leftDiceNumber = 2;
