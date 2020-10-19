@@ -39,6 +39,7 @@ class _DicePageState extends State<DicePage> {
                   setState(() {
                     //상태 업데이트에 사용
                     leftDiceNumber = Random().nextInt(6) + 1;
+                    rightDiceNumber = Random().nextInt(6) + 1;
                     print("$leftDiceNumber");
                   });
                   print("asdf");
@@ -55,6 +56,7 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 setState(() {
                   rightDiceNumber = Random().nextInt(6) + 1;
+                  leftDiceNumber = Random().nextInt(6) + 1;
                 });
                 print("qwer");
               },
