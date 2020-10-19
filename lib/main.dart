@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() {
   runApp(
@@ -36,7 +37,7 @@ class _DicePageState extends State<DicePage> {
                 onPressed: () {
                   setState(() {
                     //상태 업데이트에 사용
-                    leftDiceNumber = 3;
+                    leftDiceNumber = Random().nextInt(6) + 1;
                     print("$leftDiceNumber");
                   });
                   print("asdf");
