@@ -47,9 +47,9 @@ class _DicePageState extends State<DicePage> {
                   setState(() {
                     //상태 업데이트에 사용
                     changeDiceFace();
-                    print("$leftDiceNumber");
+                    print("Left Dice Number : $leftDiceNumber");
                   });
-                  print("asdf");
+//                  print("asdf");
                 },
                 padding: EdgeInsets.all(0),
                 child: Image(
@@ -62,8 +62,8 @@ class _DicePageState extends State<DicePage> {
             child: FlatButton(
               onPressed: () {
                 changeDiceFace();
-                print(rightDiceNumber);
-                print("qwer");
+                print("Right Dice Number : $rightDiceNumber");
+//                print("qwer");
               },
               child: Image.asset("images/dice${rightDiceNumber}.png"),
             ),
